@@ -8,7 +8,7 @@ def track():
 
 @app.route('/about')
 def about():
-    return {'message' : 'About page'}
+    return {'message' : 'About page, with fixes.'}
 
 @app.route('/')
 def home():
