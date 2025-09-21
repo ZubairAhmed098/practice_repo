@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 @app.route('/about')
 def about():
+    message = 'About Page.'
     return {'message' : 'About page'}
 
 @app.route('/')
