@@ -2,6 +2,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
+@app.route('/about')
+def about():
+    return {'message' : 'About page'}
+
 @app.route('/')
 def home():
     return {'message' : 'Hello! Flask World'}
